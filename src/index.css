@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+html {
+  background-image: linear-gradient(to bottom right, purple, blue);
+}
+
+.backgroundColor {
+  height: 100vh;
+}
+
+/* Navbar Component */
+.navbar {
+  padding: 3rem;
+
+  max-height: 10rem;
+  color: rgba(230, 230, 230, 0.801);
+}
+
+.flex {
+  display: flex;
+}
+
+.left {
+  display: flex;
+}
+
+.logo {
+  margin-right: 6rem;
+}
+
+.logo .header {
+  font-size: 3.7rem;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+}
+
+.links li {
+  display: inline;
+  margin-right: 4rem;
+  padding: 15px 0;
+}
+
+.links .link-element {
+  font-size: 2rem;
+  color: rgb(247, 247, 247);
+  text-decoration: none;
+  transition: all ease 0.2s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 35px;
+}
+.links li:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.links .link-element:hover {
+  color: white;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.buttons {
+  list-style: none;
+}
+
+.buttons li {
+  display: inline;
+}
+
+.buttons li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.button-element {
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 0.35rem;
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  transition: all ease 0.4s;
+}
+
+.button-element:hover {
+  background-color: #0400ff;
+  border-color: #0400ff;
+}
+
+/* ************ */
+
+/*Home Page İçindeki Card Component Css */
+
+.card-container {
+  margin-top: 4rem;
+  padding: 0 3rem;
+  height: 40rem;
+  display: flex;
+}
+
+.card {
+  position: relative;
+  width: 15%;
+  background-color: #0453a7;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem black;
+  margin: auto;
+  height: 34rem;
+}
+
+.card:not(:last-child) {
+  margin-right: 10rem;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.card-header {
+  margin-top: 1rem;
+  padding: 0 1.5rem;
+}
+
+.card-header-p {
+  font-size: 2.3rem;
+  background: -webkit-linear-gradient(
+    rgb(255, 255, 255),
+    rgba(158, 124, 124, 0.671)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.card-paragraph {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+.card-paragprah-p {
+  font-size: 1.7rem;
+  text-align: justify;
+  color: rgba(250, 235, 215, 0.932);
+}
+
+.toggleButton {
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  border: none;
+  background-color: inherit;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 0.2rem;
+  transition: transform 2s, text-decoration 2s, text-shadow 1s;
+}
+
+.toggleButton:hover {
+  transform: scale(1.1, 1.1);
+  text-decoration: none;
+  text-shadow: 2px 2px 15px rgba(255, 0, 0, 0);
+}
